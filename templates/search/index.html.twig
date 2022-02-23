@@ -19,13 +19,13 @@
     <div class="container">
         <div class="row g-3">
             {% if form.vars.submitted %}
-                {% for detail in details %}
+                {% for movie in movies %}
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card">
-                            <img class="card-img-top" src="{{ detail.poster }}" alt="Poster of the movie">
+                            <img class="card-img-top" src="{{ movie.poster }}" alt="Poster of the movie">
                             <div class="card-body">
-                                <h3 class="card-title">{{ detail.title }}</h3>
-                                <p class="card-text">Released in {{ detail.year }} </p>
+                                <h3 class="card-title">{{ movie.title }}</h3>
+                                <p class="card-text">Released in {{ movie.year }} </p>
                             </div>
                         </div>
                     </div>
